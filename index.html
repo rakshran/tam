@@ -1,38 +1,197 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Webpage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <head>
+    <title>sam mcallister | home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="/styles/obsidian-base.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/styles/obsidian-base.css"></noscript>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="hi! i'm sam mcallister. some people call me smca. i make things for the internet. currently working at stripe.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@sammcallister">
+<meta name="twitter:title" content="sam mcalllister | home">
+<meta name="twitter:description" content="hi! i'm sam mcallister. some people call me smca. i make things for the internet. currently working at stripe.">
+<meta name="twitter:image" content="https://smca.xyz/img/screenshot.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="sam mcalllister | home">
+<meta property="og:site_name" content="sam mcallister | home">
+<meta property="og:description" content="hi! i'm sam mcallister. some people call me smca. i make things for the internet. currently working at stripe.">
+<meta property="og:url" content="https://smca.xyz" >
+<meta property="og:image" content="https://smca.xyz/img/screenshot.png">
+<meta property="og:image:type" content="image/png">
+
+<link rel="canonical" href="https://smca.xyz">
+
+<script async data-id="101439406" src="//static.getclicky.com/js"></script>
+
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>
+    // Create callout icons
+    window.addEventListener("load", () => {
+        document.querySelectorAll(".callout").forEach((elem) => {
+            const icon = getComputedStyle(elem).getPropertyValue('--callout-icon');
+            const iconName = icon && icon.trim().replace(/^lucide-/, "");
+
+            if (iconName) {
+                const calloutTitle = elem.querySelector(".callout-title");
+
+                if (calloutTitle) {
+                    const calloutIconContainer = document.createElement("div");
+                    const calloutIcon = document.createElement("i");
+
+                    calloutIconContainer.appendChild(calloutIcon);
+                    calloutIcon.setAttribute("icon-name", iconName);
+                    calloutIconContainer.setAttribute("class", "callout-icon");
+                    calloutTitle.insertBefore(calloutIconContainer, calloutTitle.firstChild);
+                }
+            }
+        });
+
+        lucide.createIcons();
+
+        // Collapse callouts
+        Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((elem) => {
+            elem.querySelector('.callout-title').addEventListener("click", (event) => {
+                if (elem.classList.contains("is-collapsed")) {
+                    elem.classList.remove("is-collapsed");
+                } else {
+                    elem.classList.add("is-collapsed");
+                }
+            });
+        });
+    });
+</script>
+
+
+<script async="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js"></script>
+
+<script async="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script async="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+
+    <link href="/styles/obsidian-base.css" rel="stylesheet">
+    <link href="/styles/_theme.63d8d6eb.css" rel="stylesheet">
+
+
+<link href="/styles/custom-style.css" rel="stylesheet">
+
+
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+
+
+
+
+
+<style></style>
+    
+    
+  </head>
+  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section ">
+    
+    
+      
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="/" style="text-decoration: none;">
+                <h1 style="margin: 15px !important;">sam mcallister</h1>
+            </a>
+        </div>
+        
     </nav>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of the webpage.</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This section contains information about the website.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Details on how to contact us can be found here.</p>
-        </section>
+    
+    
+    
+    <main class="content cm-s-obsidian ">
+      <header>
+      
+        <h1></h1>
+      
+
+      <div class="header-meta">
+        
+      </div>
+      
+      
+      </header>
+      
+      
+      <h1 id="hi-i-m-sam" tabindex="-1">hi! i'm sam.</h1>
+<p><code>about</code><br>
+Some people call me <mark>smca</mark>. I make things for the internet.</p>
+<p><code>work</code><br>
+I work at <a href="https://anthropic.com" target="_blank" class="external-link">Anthropic</a>, an AI research company. I most recently spent five years at Stripe, one of the world’s most valuable private startups.</p>
+<p><code>contact</code><br>
+Follow me on <a href="https://twitter.com/sammcallister" target="_blank" class="external-link">Twitter</a>, <a href="https://instagram.com/sam.travel" target="_blank" class="external-link">Instagram</a>, or <a href="https://www.linkedin.com/in/sam-mcallister" target="_blank" class="external-link">LinkedIn</a>. Or <a href="mailto:smcallis0+site@gmail.com?subject=Hi%20from%20your%20site" target="_blank" class="external-link">email</a> me directly. <a href="https://github.com/smca-ant" target="_blank" class="external-link">GitHub</a> too.</p>
+<hr>
+<p><code> fun things i've helped bring to life</code></p>
+<ul>
+<li><a href="https://x.com/anthropicai/status/1803790681971859473" target="_blank" class="external-link">claw'd by anthropic</a></li>
+<li><a href="https://simonwillison.net/2024/May/24/golden-gate-claude/" target="_blank" class="external-link">golden gate</a> <a href="https://x.com/AnthropicAI/status/1793741051867615494" target="_blank" class="external-link">claude</a></li>
+<li>a 6ft marble <a href="https://x.com/mspringut/status/1783101908355588229" target="_blank" class="external-link">sculpture</a> made by robots</li>
+<li><a href="https://embedcheckout.com" target="_blank" class="external-link">embedcheckout.com</a></li>
+<li><a href="https://bfcm.stripe.dev" target="_blank" class="external-link">bfcm.stripe.dev</a></li>
+<li><a href="https://tryabuybutton.com" target="_blank" class="external-link">tryabuybutton.com</a></li>
+</ul>
+<hr>
+<p><code>read my notes</code></p>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="" href="/useful-things/">useful things</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/threading-the-needle/">threading the needle</a></li>
+</ul>
+<hr>
+<p><code>mentions</code></p>
+<blockquote>
+<p>anthropic brand team is killing it... you can clearly see the brand values of &quot;warm, human, not-scary-ai&quot; come through from its UI all the way into its media production<br>
+<a href="https://x.com/melodyskim/status/1848807140330483958" target="_blank" class="external-link">@melodyskim</a></p>
+</blockquote>
+<blockquote>
+<p>Babe wake up, another long-form essay on the future of AI published on a minimalistic but tastefully-styled website just dropped.<br>
+<a href="https://x.com/justjoshinyou13/status/1844842410443976853" target="_blank" class="external-link">@justjoshinyou13</a></p>
+</blockquote>
+<blockquote>
+<p>Everyone interested in startups should try clicking this link. What a power move, when merely displaying your live stats is the most impressive marketing you can do.<br>
+<a href="https://x.com/paulg/status/1728031749723021576" target="_blank" class="external-link">@paulg</a></p>
+</blockquote>
+<blockquote>
+<p>This is the marketing campaign I have seen.<br>
+<a href="https://x.com/teodor_io/status/1803784848118628746" target="_blank" class="external-link">@teodor_io</a></p>
+</blockquote>
+<blockquote>
+<p>Every time I watch Stripe handle stuff like this I’m in awe. Tricky situation, frustrated customers no matter what you do, acting in good faith, reasonable decisions across the board, all communicated very well. A lot for all of us to learn from.<br>
+<a href="https://x.com/austen/status/1663332758121517056?s=46" target="_blank" class="external-link">@austen</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;With that level of engagement, he's managed to build a side hustle.&quot;<br>
+<a href="https://www.cnn.com/2019/09/25/tech/instagram-hiding-likes-influencers/index.html#:~:text=Instagram%20post%20from-,mcallister,-%2C%20a%2023%2Dyear%2Dold" target="_blank" class="external-link">cnn.com</a></p>
+</blockquote>
+
+      
+      
     </main>
-    <footer>
-        <p>&copy; 2023 My Website</p>
-    </footer>
-</body>
-</html>
+
+    
+
+    
+    
+    
+    <script>
+lucide.createIcons({
+            attrs: {
+                class: ["svg-icon"]
+            }
+        });
+</script>
+    </body>
+  </html>
